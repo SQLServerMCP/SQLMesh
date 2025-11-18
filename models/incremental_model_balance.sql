@@ -3,7 +3,6 @@ MODEL (
   kind INCREMENTAL_BY_TIME_RANGE (
     time_column event_date
   ),
-  owner Darren,
   start '2020-01-01',
   cron '@daily',
   grain (account, event_date)
