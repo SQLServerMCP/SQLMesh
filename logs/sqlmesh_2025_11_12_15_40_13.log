@@ -1,3 +1,0 @@
-2025-11-12 15:40:15,258 - MainThread - sqlmesh.core.config.connection - INFO - Creating new DuckDB adapter for data files: {'db.db'} (connection.py:492)
-2025-11-12 15:40:15,354 - MainThread - root - INFO - Shutting down the event dispatcher (dispatcher.py:159)
-2025-11-12 15:40:15,381 - MainThread - sqlmesh.core.analytics.dispatcher - INFO - Failed to emit events: HTTPSConnectionPool(host='analytics.tobikodata.com', port=443): Max retries exceeded with url: /v1/sqlmesh/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F6934699D0>: Failed to resolve 'analytics.tobikodata.com' ([Errno 11001] getaddrinfo failed)")) (dispatcher.py:138)

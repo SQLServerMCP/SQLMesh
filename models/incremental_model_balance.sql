@@ -9,12 +9,12 @@ MODEL (
 );
 
 SELECT
-  custname,
-  account,
-  balance,
-  event_date
-FROM
-  sqlmesh_example.seed_balances_model
+  custname::STRING,
+  account::STRING,
+  balance::DECIMAL(15,2),
+  event_date::DATE,
+  @VAR('myvar')::INT AS variablesdd,
+  balance + @VAR('myvar') AS NewBal
+FROM sqlmesh_example.seed_balances_model
 WHERE
   event_date BETWEEN @start_date AND @end_date
-  

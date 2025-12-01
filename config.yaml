@@ -40,3 +40,6 @@ linter:
     - ambiguousorinvalidcolumn
     - invalidselectstarexpansion
     - noambiguousprojections
+
+variables:
+  myvar: 85
