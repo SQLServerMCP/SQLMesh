@@ -1,6 +1,6 @@
 # --- Gateway Connection ---
 gateways:
-  databricks:
+  databricks-dev:
     connection:
       # For more information on configuring the connection to your execution engine, visit:
       # https://sqlmesh.readthedocs.io/en/stable/reference/configuration/#connection
@@ -11,7 +11,7 @@ gateways:
       access_token: "{{ env_var('DATABRICKS_PERSONAL_ACCESS_TOKEN') }}" 
       catalog: newbankingdemo
       
-default_gateway: databricks
+default_gateway: databricks-dev
 
 # --- Model Defaults ---
 # https://sqlmesh.readthedocs.io/en/stable/reference/model_configuration/#model-defaults

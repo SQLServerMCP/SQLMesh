@@ -1,6 +1,8 @@
 MODEL (
   name gold.transactions_2,
-  kind FULL,
+  kind INCREMENTAL_BY_UNIQUE_KEY (
+    unique_key (AccountNumber, TransactionDate, TransactionAmount)
+  ),
   owner 'Darren',
   column_descriptions (
     AccountNumber = 'The Account Number of the account',

@@ -1,0 +1,179 @@
+2025-12-03 13:33:27,330 - MainThread - sqlmesh.core.console - WARNING - The databricks engine is not recommended for storing SQLMesh state in production deployments. Please see https://sqlmesh.readthedocs.io/en/stable/guides/configuration/#state-connection for a list of recommended engines and more information. (console.py:2335)
+2025-12-03 13:33:27,536 - MainThread - databricks.sql.session - WARNING - [WARN] Parameter '_user_agent_entry' is deprecated; use 'user_agent_entry' instead. This parameter will be removed in the upcoming releases. (session.py:55)
+2025-12-03 13:33:27,729 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:27,729 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:27,744 - MainThread - databricks.sql.session - INFO - Successfully opened session 01f0d04c-a727-1835-8fcf-bebb8bcbbcd4 (session.py:143)
+2025-12-03 13:33:28,078 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:28,078 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:28,213 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:28,213 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:28,409 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:28,409 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:28,547 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:28,547 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:28,968 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:28,968 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:29,130 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:29,130 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:29,531 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:29,531 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:29,724 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:29,724 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:29,905 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:29,905 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:30,085 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:30,085 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:30,377 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:30,377 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:30,386 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Listing data objects in schema newbankingdemo.sqlmesh__gold (evaluator.py:1616)
+2025-12-03 13:33:30,411 - MainThread - databricks.sql.session - WARNING - [WARN] Parameter '_user_agent_entry' is deprecated; use 'user_agent_entry' instead. This parameter will be removed in the upcoming releases. (session.py:55)
+2025-12-03 13:33:30,647 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:30,647 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:30,650 - MainThread - databricks.sql.session - INFO - Successfully opened session 01f0d04c-a8e0-1c7c-948e-af5d63a9ffb7 (session.py:143)
+2025-12-03 13:33:30,653 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: SELECT `table_name` AS `name`, `table_schema` AS `schema`, `table_catalog` AS `catalog`, CASE `table_type` WHEN 'VIEW' THEN 'view' WHEN 'MATERIALIZED_VIEW' THEN 'materialized_view' ELSE 'table' END AS `type` FROM `system`.`information_schema`.`tables` WHERE (`table_catalog` = 'newbankingdemo' AND `table_schema` = 'sqlmesh__gold') AND `table_name` IN ('gold__accounts_2__2894313673', 'gold__customers_2__2439568028', 'gold__transactions_2__3716642666') (base.py:2619)
+2025-12-03 13:33:30,985 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:30,986 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:30,989 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Listing data objects in schema newbankingdemo.sqlmesh__silver (evaluator.py:1616)
+2025-12-03 13:33:30,990 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: SELECT `table_name` AS `name`, `table_schema` AS `schema`, `table_catalog` AS `catalog`, CASE `table_type` WHEN 'VIEW' THEN 'view' WHEN 'MATERIALIZED_VIEW' THEN 'materialized_view' ELSE 'table' END AS `type` FROM `system`.`information_schema`.`tables` WHERE (`table_catalog` = 'newbankingdemo' AND `table_schema` = 'sqlmesh__silver') AND `table_name` IN ('silver__transactions_2__2179663067', 'silver__customers_2__562887494', 'silver__accounts_2__3741260822') (base.py:2619)
+2025-12-03 13:33:31,259 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:31,259 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:31,414 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:31,414 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:31,440 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Evaluating snapshot SnapshotId<"newbankingdemo"."silver"."accounts_2": 341872557> (evaluator.py:711)
+2025-12-03 13:33:31,442 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: USE CATALOG `newbankingdemo` (base.py:2619)
+2025-12-03 13:33:31,596 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:31,596 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:31,613 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting data for snapshot SnapshotId<"newbankingdemo"."silver"."accounts_2": 341872557> (evaluator.py:952)
+2025-12-03 13:33:31,627 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting batch (2025-12-02 00:00:00, 2025-12-03 00:00:00) into newbankingdemo.sqlmesh__silver.silver__accounts_2__3741260822' (evaluator.py:984)
+2025-12-03 13:33:31,637 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: INSERT INTO `newbankingdemo`.`sqlmesh__silver`.`silver__accounts_2__3741260822` REPLACE WHERE TRUE SELECT CAST(`accountnumber` AS STRING) AS `accountnumber`, CAST(`customernumber` AS STRING) AS `customernumber`, CAST(`accountopeneddate` AS TIMESTAMP_NTZ) AS `accountopeneddate`, CAST(`startingbalance` AS DECIMAL(15, 2)) AS `startingbalance` FROM `newbankingdemo`.`bronze`.`accounts_2` AS `accounts_2` (base.py:2619)
+2025-12-03 13:33:36,305 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:36,305 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:36,330 - MainThread - sqlmesh.core.state_sync.db.facade - INFO - Adding interval (2025-12-02 00:00:00, 2025-12-03 00:00:00) for snapshot SnapshotId<"newbankingdemo"."silver"."accounts_2": 341872557> (facade.py:637)
+2025-12-03 13:33:36,332 - MainThread - sqlmesh.core.state_sync.db.interval - INFO - Pushing intervals for snapshot SnapshotId<"newbankingdemo"."silver"."accounts_2": 341872557> (interval.py:215)
+2025-12-03 13:33:38,050 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:38,050 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:38,272 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:38,272 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:38,301 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Evaluating snapshot SnapshotId<"newbankingdemo"."silver"."customers_2": 95111029> (evaluator.py:711)
+2025-12-03 13:33:38,305 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: USE CATALOG `newbankingdemo` (base.py:2619)
+2025-12-03 13:33:38,531 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:38,531 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:38,537 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting data for snapshot SnapshotId<"newbankingdemo"."silver"."customers_2": 95111029> (evaluator.py:952)
+2025-12-03 13:33:38,555 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting batch (2025-12-02 00:00:00, 2025-12-03 00:00:00) into newbankingdemo.sqlmesh__silver.silver__customers_2__562887494' (evaluator.py:984)
+2025-12-03 13:33:38,562 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: INSERT INTO `newbankingdemo`.`sqlmesh__silver`.`silver__customers_2__562887494` REPLACE WHERE TRUE SELECT CAST(`customernumber` AS STRING) AS `customernumber`, CAST(`firstname` AS STRING) AS `firstname`, CAST(`surname` AS STRING) AS `surname`, CAST(`dateofbirth` AS DATE) AS `dateofbirth`, CAST(`gender` AS STRING) AS `gender`, CAST(`emailaddress` AS STRING) AS `emailaddress`, CAST(`ukpostcode` AS STRING) AS `ukpostcode`, CAST(`housenumber` AS STRING) AS `housenumber`, CAST(`streetaddress` AS STRING) AS `streetaddress`, CAST(`town` AS STRING) AS `town` FROM `newbankingdemo`.`bronze`.`customers_2` AS `customers_2` (base.py:2619)
+2025-12-03 13:33:42,583 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:42,583 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:42,584 - MainThread - sqlmesh.core.state_sync.db.facade - INFO - Adding interval (2025-12-02 00:00:00, 2025-12-03 00:00:00) for snapshot SnapshotId<"newbankingdemo"."silver"."customers_2": 95111029> (facade.py:637)
+2025-12-03 13:33:42,584 - MainThread - sqlmesh.core.state_sync.db.interval - INFO - Pushing intervals for snapshot SnapshotId<"newbankingdemo"."silver"."customers_2": 95111029> (interval.py:215)
+2025-12-03 13:33:44,188 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:44,188 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:44,349 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:44,349 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:44,367 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Evaluating snapshot SnapshotId<"newbankingdemo"."silver"."transactions_2": 915784264> (evaluator.py:711)
+2025-12-03 13:33:44,367 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: USE CATALOG `newbankingdemo` (base.py:2619)
+2025-12-03 13:33:44,551 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:44,551 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:44,551 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting data for snapshot SnapshotId<"newbankingdemo"."silver"."transactions_2": 915784264> (evaluator.py:952)
+2025-12-03 13:33:44,565 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting batch (2025-12-02 00:00:00, 2025-12-03 00:00:00) into newbankingdemo.sqlmesh__silver.silver__transactions_2__2179663067' (evaluator.py:984)
+2025-12-03 13:33:44,569 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: MERGE INTO `newbankingdemo`.`sqlmesh__silver`.`silver__transactions_2__2179663067` AS `__MERGE_TARGET__` USING (SELECT CAST(`accountnumber` AS STRING) AS `accountnumber`, CAST(`customernumber` AS STRING) AS `customernumber`, CAST(`transactiondate` AS TIMESTAMP_NTZ) AS `transactiondate`, CAST(`transactionamount` AS DECIMAL(15, 2)) AS `transactionamount` FROM `newbankingdemo`.`bronze`.`transactions_2` AS `transactions_2`) AS `__MERGE_SOURCE__` ON `__MERGE_TARGET__`.`accountnumber` = `__MERGE_SOURCE__`.`accountnumber` AND `__MERGE_TARGET__`.`transactiondate` = `__MERGE_SOURCE__`.`transactiondate` WHEN MATCHED THEN UPDATE SET `__MERGE_TARGET__`.`accountnumber` = `__MERGE_SOURCE__`.`accountnumber`, `__MERGE_TARGET__`.`customernumber` = `__MERGE_SOURCE__`.`customernumber`, `__MERGE_TARGET__`.`transactiondate` = `__MERGE_SOURCE__`.`transactiondate`, `__MERGE_TARGET__`.`transactionamount` = `__MERGE_SOURCE__`.`transactionamount` WHEN NOT MATCHED THEN INSERT (`accountnumber`, `customernumber`, `transactiondate`, `transactionamount`) VALUES (`__MERGE_SOURCE__`.`accountnumber`, `__MERGE_SOURCE__`.`customernumber`, `__MERGE_SOURCE__`.`transactiondate`, `__MERGE_SOURCE__`.`transactionamount`) (base.py:2619)
+2025-12-03 13:33:46,927 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:46,936 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:47,172 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:47,172 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:47,192 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Evaluating snapshot SnapshotId<"newbankingdemo"."gold"."accounts_2": 3101799127> (evaluator.py:711)
+2025-12-03 13:33:47,192 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: USE CATALOG `newbankingdemo` (base.py:2619)
+2025-12-03 13:33:47,363 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:47,363 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:47,372 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting data for snapshot SnapshotId<"newbankingdemo"."gold"."accounts_2": 3101799127> (evaluator.py:952)
+2025-12-03 13:33:47,396 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting batch (2025-12-02 00:00:00, 2025-12-03 00:00:00) into newbankingdemo.sqlmesh__gold.gold__accounts_2__2894313673' (evaluator.py:984)
+2025-12-03 13:33:47,404 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: INSERT INTO `newbankingdemo`.`sqlmesh__gold`.`gold__accounts_2__2894313673` REPLACE WHERE TRUE SELECT CAST(`accounts_2`.`accountnumber` AS STRING) AS `accountnumber`, CAST(`accounts_2`.`customernumber` AS STRING) AS `customernumber`, CAST(YEAR(`accounts_2`.`accountopeneddate`) AS INT) AS `accountopenedyear`, CAST(MONTH(`accounts_2`.`accountopeneddate`) AS INT) AS `accountopenedmonth`, CAST(DAY(`accounts_2`.`accountopeneddate`) AS INT) AS `accountopenedday`, CAST(DAYNAME(`accounts_2`.`accountopeneddate`) AS STRING) AS `accountopeneddayname`, CAST(`accounts_2`.`startingbalance` AS DECIMAL(15, 2)) AS `startingbalance` FROM `newbankingdemo`.`sqlmesh__silver`.`silver__accounts_2__3741260822` AS `accounts_2` (base.py:2619)
+2025-12-03 13:33:50,284 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:50,284 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:50,292 - MainThread - sqlmesh.core.state_sync.db.facade - INFO - Adding interval (2025-12-02 00:00:00, 2025-12-03 00:00:00) for snapshot SnapshotId<"newbankingdemo"."gold"."accounts_2": 3101799127> (facade.py:637)
+2025-12-03 13:33:50,294 - MainThread - sqlmesh.core.state_sync.db.interval - INFO - Pushing intervals for snapshot SnapshotId<"newbankingdemo"."gold"."accounts_2": 3101799127> (interval.py:215)
+2025-12-03 13:33:51,941 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:51,941 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:52,126 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:52,126 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:52,144 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Evaluating snapshot SnapshotId<"newbankingdemo"."gold"."customers_2": 1076732822> (evaluator.py:711)
+2025-12-03 13:33:52,158 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: USE CATALOG `newbankingdemo` (base.py:2619)
+2025-12-03 13:33:52,311 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:52,311 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:52,317 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting data for snapshot SnapshotId<"newbankingdemo"."gold"."customers_2": 1076732822> (evaluator.py:952)
+2025-12-03 13:33:52,333 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting batch (2025-12-02 00:00:00, 2025-12-03 00:00:00) into newbankingdemo.sqlmesh__gold.gold__customers_2__2439568028' (evaluator.py:984)
+2025-12-03 13:33:52,338 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: INSERT INTO `newbankingdemo`.`sqlmesh__gold`.`gold__customers_2__2439568028` REPLACE WHERE TRUE SELECT CAST(`customers_2`.`customernumber` AS STRING) AS `customernumber`, CAST(`customers_2`.`dateofbirth` AS DATE) AS `dateofbirth`, CAST(`customers_2`.`gender` AS STRING) AS `gender`, CAST(`customers_2`.`ukpostcode` AS STRING) AS `ukpostcode` FROM `newbankingdemo`.`sqlmesh__silver`.`silver__customers_2__562887494` AS `customers_2` (base.py:2619)
+2025-12-03 13:33:54,698 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:54,698 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:54,698 - MainThread - sqlmesh.core.state_sync.db.facade - INFO - Adding interval (2025-12-02 00:00:00, 2025-12-03 00:00:00) for snapshot SnapshotId<"newbankingdemo"."gold"."customers_2": 1076732822> (facade.py:637)
+2025-12-03 13:33:54,698 - MainThread - sqlmesh.core.state_sync.db.interval - INFO - Pushing intervals for snapshot SnapshotId<"newbankingdemo"."gold"."customers_2": 1076732822> (interval.py:215)
+2025-12-03 13:33:56,056 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:56,056 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:56,110 - MainThread - sqlmesh.core.scheduler - INFO - SKIPPED snapshot "newbankingdemo"."gold"."transactions_2"
+ (scheduler.py:613)
+2025-12-03 13:33:56,111 - MainThread - sqlmesh.core.scheduler - INFO - Execution failed for node EvaluateNode(snapshot_name='"newbankingdemo"."silver"."transactions_2"', interval=(1764633600000, 1764720000000), batch_index=0) (scheduler.py:618)
+Traceback (most recent call last):
+  File "C:\Users\darki\Documents\Platform\env\Lib\site-packages\sqlmesh\utils\concurrency.py", line 234, in sequential_apply_to_dag
+    fn(node)
+  File "C:\Users\darki\Documents\Platform\env\Lib\site-packages\sqlmesh\core\scheduler.py", line 554, in run_node
+    audit_results = self.evaluate(
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\darki\Documents\Platform\env\Lib\site-packages\sqlmesh\core\scheduler.py", line 229, in evaluate
+    wap_id = self.snapshot_evaluator.evaluate(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\darki\Documents\Platform\env\Lib\site-packages\sqlmesh\core\snapshot\evaluator.py", line 186, in evaluate
+    result = self._evaluate_snapshot(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\darki\Documents\Platform\env\Lib\site-packages\sqlmesh\core\snapshot\evaluator.py", line 821, in _evaluate_snapshot
+    self._render_and_insert_snapshot(
+  File "C:\Users\darki\Documents\Platform\env\Lib\site-packages\sqlmesh\core\snapshot\evaluator.py", line 1041, in _render_and_insert_snapshot
+    apply(query_or_df, index)
+  File "C:\Users\darki\Documents\Platform\env\Lib\site-packages\sqlmesh\core\snapshot\evaluator.py", line 990, in apply
+    evaluation_strategy.insert(
+  File "C:\Users\darki\Documents\Platform\env\Lib\site-packages\sqlmesh\core\snapshot\evaluator.py", line 2297, in insert
+    self.adapter.merge(
+  File "C:\Users\darki\Documents\Platform\env\Lib\site-packages\sqlmesh\core\engine_adapter\shared.py", line 318, in internal_wrapper
+    return func(*list_args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\darki\Documents\Platform\env\Lib\site-packages\sqlmesh\core\engine_adapter\base.py", line 2261, in merge
+    self._merge(
+  File "C:\Users\darki\Documents\Platform\env\Lib\site-packages\sqlmesh\core\engine_adapter\base.py", line 1729, in _merge
+    self.execute(
+  File "C:\Users\darki\Documents\Platform\env\Lib\site-packages\sqlmesh\core\engine_adapter\base.py", line 2596, in execute
+    self._execute(sql, track_rows_processed, **kwargs)
+  File "C:\Users\darki\Documents\Platform\env\Lib\site-packages\sqlmesh\core\engine_adapter\base.py", line 2628, in _execute
+    self.cursor.execute(sql, **kwargs)
+  File "C:\Users\darki\Documents\Platform\env\Lib\site-packages\databricks\sql\telemetry\latency_logger.py", line 175, in wrapper
+    result = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\darki\Documents\Platform\env\Lib\site-packages\databricks\sql\client.py", line 1293, in execute
+    self.active_result_set = self.backend.execute_command(
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\darki\Documents\Platform\env\Lib\site-packages\databricks\sql\backend\thrift_backend.py", line 1058, in execute_command
+    execute_response, has_more_rows = self._handle_execute_response(
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\darki\Documents\Platform\env\Lib\site-packages\databricks\sql\backend\thrift_backend.py", line 1265, in _handle_execute_response
+    final_operation_state = self._wait_until_command_done(
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\darki\Documents\Platform\env\Lib\site-packages\databricks\sql\backend\thrift_backend.py", line 944, in _wait_until_command_done
+    self._check_command_not_in_error_or_closed_state(
+  File "C:\Users\darki\Documents\Platform\env\Lib\site-packages\databricks\sql\backend\thrift_backend.py", line 635, in _check_command_not_in_error_or_closed_state
+    raise ServerOperationError(
+databricks.sql.exc.ServerOperationError: [DELTA_MULTIPLE_SOURCE_ROW_MATCHING_TARGET_ROW_IN_MERGE] Cannot perform Merge as multiple source rows matched and attempted to modify the same
+target row in the Delta table in possibly conflicting ways. By SQL semantics of Merge,
+when multiple source rows match on the same target row, the result may be ambiguous
+as it is unclear which source row should be used to update or delete the matching
+target row. You can preprocess the source table to eliminate the possibility of
+multiple matches. Please refer to
+https://docs.databricks.com/delta/merge.html#merge-error
+
+
+The above exception was the direct cause of the following exception:
+
+sqlmesh.utils.concurrency.NodeExecutionFailedError: Execution failed for node EvaluateNode(snapshot_name='"newbankingdemo"."silver"."transactions_2"', interval=(1764633600000, 1764720000000), batch_index=0)
+2025-12-03 13:33:56,319 - MainThread - databricks.sql.session - INFO - Closing session 01f0d04c-a8e0-1c7c-948e-af5d63a9ffb7 (session.py:194)
+2025-12-03 13:33:56,391 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:56,391 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:56,391 - MainThread - databricks.sql.session - INFO - Closing session 01f0d04c-a727-1835-8fcf-bebb8bcbbcd4 (session.py:194)
+2025-12-03 13:33:56,474 - MainThread - databricks.sql.auth.retry - INFO - Received status code 200 for POST request (retry.py:355)
+2025-12-03 13:33:56,474 - MainThread - databricks.sql.auth.thrift_http_client - INFO - HTTP Response with status code 200, message: OK (thrift_http_client.py:208)
+2025-12-03 13:33:56,507 - MainThread - root - INFO - Shutting down the event dispatcher (dispatcher.py:159)
