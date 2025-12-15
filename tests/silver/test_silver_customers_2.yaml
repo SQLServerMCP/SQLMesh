@@ -1,0 +1,24 @@
+test_silver_customers_2:
+  model: silver.customers_2
+  inputs:
+    bronze.customers_2:
+      rows:
+      - CustomerNumber: "1"
+        FirstName: "Darren"
+        Surname: "Darkings"
+        DateOfBirth: "1971-08-26"
+        Gender: "Male"
+        EmailAddress: ""
+        UKPostCode: ""
+        HouseNumber: ""
+        StreetAddress: ""
+        Town: ""
+        
+  outputs:
+    query:
+      partial: true
+      rows:
+      - CustomerNumber: "1"
+        DateOfBirth: 1971-08-26
+       
+

@@ -1,0 +1,18 @@
+test_silver_transactions_2:
+  model: silver.transactions_2
+  inputs:
+    bronze.transactions_2:
+      rows:
+      - AccountNumber: "A101"
+        CustomerNumber: "1"
+        TransactionDate: "2025-01-01T00:00:00.000"
+        TransactionAmount: "20.55"
+  outputs:
+    query:
+      partial: true
+      rows:
+      - AccountNumber: "A101"
+        CustomerNumber: "1"
+        TransactionDate: 2025-01-01T00:00:00.000
+        TransactionAmount: 20.55
+
