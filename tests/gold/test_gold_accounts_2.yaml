@@ -1,0 +1,20 @@
+test_gold_accounts_2:
+  model: gold.accounts_2
+  inputs:
+    silver.accounts_2:
+      rows:
+      - AccountNumber: "A101"
+        CustomerNumber: "1"
+        AccountOpenedDate: "2025-12-01T00:00:00.000"
+        StartingBalance: "10.00"
+  outputs:
+    query:
+      partial: true
+      rows:
+      - AccountNumber: "A101"
+        CustomerNumber: "1"
+        AccountOpenedYear: 2025
+        AccountOpenedMonth: 12
+        AccountOpenedDay: 1
+        AccountOpenedDayName: "Monday"
+        StartingBalance: 10.00

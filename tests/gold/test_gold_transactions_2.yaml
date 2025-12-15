@@ -1,0 +1,21 @@
+test_gold_transactions_2:
+  model: gold.transactions_2
+  inputs:
+    silver.transactions_2:
+      rows:
+      - AccountNumber: "A101"
+        CustomerNumber: "1"
+        TransactionDate: "2025-12-01T00:00:00.000"
+        TransactionAmount: "20.55"
+  outputs:
+    query:
+      partial: true
+      rows:
+      - AccountNumber: "A101"
+        CustomerNumber: "1"
+        TransactionYear: 2025
+        TransactionMonth: 12
+        TransactionMonthName: "December"
+        TransactionDay: 1
+        TransactionDayName: "Monday"
+        TransactionAmount: 20.55
